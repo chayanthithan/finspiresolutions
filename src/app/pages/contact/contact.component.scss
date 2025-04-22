@@ -1,0 +1,120 @@
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.inner__container{
+    width: 100%;
+    height: 100%;
+    padding: 4px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    width: 50%;
+    // border: 1px solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.contact{
+    width: 50%;
+    // border: 1px solid;
+}
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0,0,94);
+    padding: 10px;
+}
+.intro__msg{
+    font-size: 18px;
+    font-weight: medium;
+    color: rgb(51, 51, 51);
+    padding: 20px 10px;
+}
+.contact__details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px 10px;
+    // border: 1px solid;
+}
+.mobile img,.email img,.address img{
+    width: 30px;
+    height: 30px;
+}
+.mobile,.email,.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+
+// form
+form{
+    width: 100%;
+}
+.form__inner_div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    // border: 1px solid;
+}
+.cust__name,.cust__email ,
+.cust__mobile ,
+.cust__msg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+.cust__name > input,.cust__email > input,
+.cust__mobile > input{
+    padding: 5px;
+}
+.Fullname{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.Fullname > input{
+    width: 50%;
+    padding: 5px;
+}
+.btn{
+    width: 80%;
+    margin: auto;
+    // border: 1px solid;
+    padding: 10px;
+}
+.btn button{
+    padding: 10px 50px;
+    background-color: rgb(0,0,94);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    &:hover{
+        background-color: white;
+        color: rgb(0,0,94);
+        cursor: pointer;
+        border: 1px solid rgb(0,0,94);
+    }
+}

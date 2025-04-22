@@ -1,0 +1,111 @@
+.img__section {
+    height:20vh;
+    width: 100%;
+    background-image: url('../../../../public/webDevelopment.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.title{
+    padding: 0px 50px;
+}
+.title span{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+// projects
+.latest__projects{
+    padding: 50px;
+}
+.latest__projects__title{
+    width: 100%;
+    font-size: 30px;
+    color: rgb(0, 0, 94);
+    font-weight: bolder; 
+    padding: 30px 0px;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.project_card{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    padding: 25px;
+    // border: 1px solid rgb(0, 0, 94);
+    border-radius: 15px;
+    // background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(243, 243, 253));
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid;
+   
+}
+.project_content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    // border: 1px solid;
+}
+.project__name{
+    font-size: 22px;
+    color: rgb(0, 0, 94);
+    font-weight: bold;
+}
+.project_info{
+    color: rgb(0, 0, 94);
+    text-align: justify;
+    color: rgb(107, 106, 106);
+    font-size: 15px;
+
+
+}
+.project_btn{
+    width: 100%;
+}
+.project_btn button{
+    width:30%;
+    background-color: rgb(0, 0, 94);
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    border-radius: 5px;
+    &:hover{
+        background-color: #fff;
+        border: 1px solid rgb(0, 0, 94);
+        cursor: pointer;
+        color: rgb(0, 0, 94);
+        padding: 5px 20px;
+    }
+}
+.project_img{
+    width: 40%;
+    // border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.project_img img{
+    width: 350px;
+    height:180px;
+    border-radius: 15px;
+}
