@@ -127,3 +127,12 @@
         color: white;
     }
   }
+  @media screen and (min-width: 2560px) {
+    .footer{
+       font-size: 35px;
+    }
+    .logos img{
+        height: 50px;
+        width: 50px;
+    }
+  }
