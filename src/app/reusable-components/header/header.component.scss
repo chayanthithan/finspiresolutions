@@ -62,11 +62,6 @@
     font-weight: 400;
 }
 
-.navbar {
-    // border: 1px solid;
-
-}
-
 .navbar ul {
     text-decoration: none;
     display: flex;
@@ -80,7 +75,6 @@
     font-size: 18px;
     color: rgb(0, 0, 94);
     font-weight: 500;
-    // border: 1px solid;
 
     &:hover {
         color: rgb(0, 0, 206);
@@ -112,7 +106,6 @@
 
 .contact span {
     font-size: 18px;
-    // color:rgb(0, 0, 94);
     font-weight: 500;
 }
 
@@ -120,13 +113,57 @@
     width: 20px;
     height: 20px;
 }
+.sub__contact{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffff;
+}
+.phone_no{
+    font-size: 13px;
+}
+.inner__sub__contact span {
+    font-size: 12px;
+    font-weight: 200;
+}
+.inner__sub__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 5px;
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        color: rgb(0, 0, 94);
+    }
+}
 
+.inner__sub__contact img {
+    width: 20px;
+    height: 20px;
+}
+.menu{
+    display: none;
+}
 
 // media query
-@media only screen and (min-width: 600px) {
- 
-}
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 320px) {
+    .header__content {
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .header__content {
         height: 100%;
         padding: 0px 20px;
@@ -137,7 +174,7 @@
     }
     .contact {
         border: 1px solid rgb(0, 0, 94);
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -158,7 +195,6 @@
     
     .contact span {
         font-size: 13px;
-        // color:rgb(0, 0, 94);
         font-weight: 300;
     }
     
@@ -166,13 +202,85 @@
         width: 15px;
         height: 15px;
     }
+    .sub__contact{
+        width: 90% !important;
+        height: 50px !important;
+        color: white;
+        background-color: #fff !important;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ffff !important;
+        margin: auto;
+    }
     .menu{
-        display: block;
+        display: block !important;
     }
     .navbar{
+        display: none !important;
+    }
+    .contact{
+        display: none !important;
+    }
+    .contact span {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .contact img {
         display: none;
     }
-  }
+    .sub__contact{
+        display: block;
+    }
+}
+// @media screen and (max-width: 600px) {
+    
+//     .header__content {
+//         height: 100%;
+//         padding: 0px 20px;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//     .contact {
+//         border: 1px solid rgb(0, 0, 94);
+//         display: flex !important;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: center;
+//         gap: 5px;
+//         border-radius: 5px;
+//         text-align: center;
+//         padding: 5px;
+//         color: rgb(0, 0, 94);
+    
+//         &:hover {
+//             background-color: rgb(0, 0, 94);
+//             cursor: pointer;
+//             color: white;
+//             background-image: rgb(0, 0, 94);
+    
+//         }
+//     }
+    
+//     .contact span {
+//         font-size: 13px;
+//         font-weight: 300;
+//     }
+    
+//     .contact img {
+//         width: 15px;
+//         height: 15px;
+//     }
+//     .menu{
+//         display: block;
+//     }
+//     .navbar{
+//         display: none;
+//     }
+//   }
   
   
   @media only screen and (min-width: 768px) {

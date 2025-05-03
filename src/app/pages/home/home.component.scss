@@ -22,6 +22,8 @@
 }
 
 .message {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -344,13 +346,14 @@
 
 .about__content {
     height: 100%;
-    padding: 100px 50px 50px 50px;
+    // padding: 100px 50px 50px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
 }
+
 
 .about__message {
     width: 50%;
@@ -558,34 +561,77 @@
 
 // media query
 
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 320px) {
+    .parent__container{
+        height: 100%;
+        width: 100%;
+    }
+    .home__container{
+        height: 100%;
+        width: 100%;
+    }
+    .message__title span{
+        font-size: 15px;
+        position: relative;
+        color: transparent;
+        white-space: nowrap;
+    }
     .home__content {
         height: 100%;
         width: 90%;
         margin: auto;
-        padding: 4px 15px;
+        padding: 45px 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .message{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .message__content{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        text-align: justify;
+        color: #fff;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+    .image__content img {
+        height: 200px;
+        width: 300px;
+    }
+    .message__btn{
+        width: 100%;
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
     .service__content{
         height: 100%;
         padding: 4px 10px;
     }
-    
-    .message__title span{
-       display: none;
-       
+    .service__title{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
     }
-
-    
-    .about__image__content img{
-        height: 250px;
-        width: 250px;
-        border-radius: 15px;
+    .card{
+        width: 80%;
+        height: 350px;
     }
-
     .intro{
         width: 100%;
         display: flex;
@@ -596,7 +642,7 @@
         font-size: 20px;
         font-weight: 500;
         color: rgb(0, 0, 94);
-    
+        
     }
     .inner_intro{
         display: flex;
@@ -620,200 +666,447 @@
         height:180px;
         border-radius: 15px;
     }
-      .about__message__title{
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .home__container {
-        height: 90vh;
-        width: 100%;
-        background-color: rgb(0, 0, 53);
-    }
-    .home__content {
-        height: 100%;
-        width: 90%;
-        margin: auto;
-        padding: 4px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .message{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .message__title span {
-        font-size: 30px;
-        font-weight: bold;
-        text-align: left;
-        position: relative; /* Important for positioning ::before */
-        color: transparent;
-        -webkit-text-stroke: 0.1vw white;
-        white-space: nowrap;
-    }
-    .message__btn{
-        width: 90%;
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;
-        
-    }
-    .image{
-        display: none;
-    }
-    .message__content{
-        width: 100%;
-        font-size: 15px;
-        font-weight: 300;
-        text-align: left;
-        text-align: justify;
-        color: #fff;
-    }
- 
-    .image__content img{
-        height: 300px;
-        width: 300px;
+    .about__image__content img{
+        height: 250px;
+        width: 250px;
         border-radius: 15px;
     }
-    // ---------------------------------   about
     .about__content {
+        width: 100%;
         height: 100%;
-        padding: 100px 50px 50px 50px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-    
+        padding: 20% 0%;
     }
-    
-    .about__message {
-        width: 100%;
+    .about__message__title{
+        font-size: 23px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5%;
+    }
+    .about__message__content{
+        width: 100% !important;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        text-align: justify;
+    }
+    .about__message{
+        width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: rgb(0, 0, 94);
         gap: 30px;
-        // border: 1px solid;
-    }
-    .about__message__title{
-        font-size: 40px;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .about__message__content{
-        width: 90%;
         margin: auto;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: left;
-        text-align: justify;
     }
-    // service card
-    .card{
-        width: 80%;
-        height: 350px;
-        padding: 25px;
-        // border: 1px solid rgb(0, 0, 94);
-        border-radius: 15px;
-        // background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(243, 243, 253));
-        background-color: rgba(255,255,255,0.9);
-        box-shadow: 1px 1px 3px rgb(0, 0, 0,0.3);
+    .about__image{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        position: relative;
+        justify-content: center;
+        align-items: center;
     }
-    
+    .about__message__btn{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+    }
     .mission__vission__card{
         width: 90%;
-        height: 250px;
-        padding: 15px;
+        height: 200px;
+        padding: 25px;
         border-radius: 15px;
-        background-color: rgba(255,255,255,0.9);
-        box-shadow: 5px 5px 15px rgb(0, 0, 0,0.3);
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .project_card{
-        width: 80%;
+    .card__title{
+        width: 100%;
+        font-size: 20px;
+        color: rgb(0, 0, 94);
+        font-weight: bolder;
+        text-align: center;
+    }
+    //  ------------------------------  projects
+    .latest__projects__title{
+        width: 100%;
+        font-size: 23px;
+        color: rgb(0, 0, 94);
+        font-weight: bolder;
+        padding: 30px 0px;
+        text-align: center;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .project_card {
         margin: auto;
-        height: 100%;
+        height: 300px;
         padding: 25px;
         border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-       
     }
-    .project_content{
+    .project_content {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
-        // border: 1px solid;
+    }
+    .project_info{
+        display: none;
+    }
+    .latest__projects{
+       padding: 0px;
     }
     .project__name{
         font-size: 22px;
         color: rgb(0, 0, 94);
         font-weight: bold;
-    }
-    .project_info{
-        color: rgb(0, 0, 94);
-        text-align: justify;
-        color: rgb(107, 106, 106);
-        font-size: 15px;
-    
-    
-    }
-    .project_btn{
-        width: 100%;
+        text-align: center;
     }
     .project_btn button{
-        width:30%;
+        width: 100%;
         background-color: rgb(0, 0, 94);
         color: white;
         font-weight: bold;
         border: 1px solid transparent;
         padding: 5px 20px;
         border-radius: 5px;
-        &:hover{
-            background-color: #fff;
-            border: 1px solid rgb(0, 0, 94);
-            cursor: pointer;
-            color: rgb(0, 0, 94);
-            padding: 5px 20px;
-        }
     }
-    .project_img{
-        width: 100%;
-        // border: 1px solid;
+}
+
+
+@media screen and (min-width: 768px) {
+    .about__image__content img {
+        height: 250px;
+        width: 350px;
+        border-radius: 15px;
+    }
+    .about__message__content {
+        width: 100% !important;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        text-align: justify;
+    }
+    .about__message__btn button{
+        height: 40px;
+        width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    
+        gap: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        font-weight: bold;
+        background-color: rgb(0, 0, 94);
+        color: #fff;
+    }
+    .intro{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 800;
+        color: rgb(0, 0, 94);
+    }
+    .mission__vission{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .latest__projects{
+        padding: 50px;
+    }
+    .project_img{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .project_img img{
-        width: 400px;
-        height:180px;
+        width: 100%;
+        height: 180px;
         border-radius: 15px;
     }
-  }
-  
-  @media only screen and (min-width: 768px) {
-   
-  }
+    .project_btn {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .project_btn button {
+        width: 50%;
+        background-color: rgb(0, 0, 94);
+        color: white;
+        font-weight: bold;
+        border: 1px solid transparent;
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .home__content{
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        padding: 45px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .service__title{
+        width: 100%;
+        font-size: 40px;
+        text-align: left;
+    }
+    .service__content{
+        height: 100%;
+        padding: 3%;
+    }
+    .message__title span{
+        font-size: 25px;
+        position: relative;
+        color: transparent;
+        white-space: nowrap;
+    }
+    .message {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .message{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 0px;
+    }
+    .image__content img{
+        height: 250px;
+        width: 350px;
+    }
+    .message__btn{
+        width: 100%;
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .card{
+        width: 40%;
+        height: 350px;
+    }
+    .about__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0%;
+    }
+    .about__message__title{
+        font-size: 40px;
+        font-weight: bold;
+        padding: 5%;
+        text-align: left;
+    }
+    .about__message{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(0, 0, 94);
+        gap: 30px;
+        margin: auto;
+        padding: 45px 35px;
+    }
+    .about__message__btn{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    }
+    .about__image__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+    .about__image__content img{
+        height: 350px;
+        width: 400px;
+        border-radius: 15px;
+    }
+    .latest__projects__title{
+        width: 100%;
+        font-size: 40px;
+        color: rgb(0, 0, 94);
+        font-weight: bolder;
+        padding: 30px 0px;
+        text-align: left;
+    }
+    .projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .message__title span{
+        font-size: 30px;
+        position: relative;
+        color: transparent;
+        white-space: nowrap;
+    }
+    .image__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .image__content img{
+        height: 400px;
+        width: 450px;
+    }
+    .message__btn button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 40px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        font-weight: bold;
+        background-color: white;
+    }
+    .card{
+        width: 25%;
+        height: 350px;
+    }
+    .about__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0%;
+    }
+    .about__message__content{
+        width: 100% !important;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+        text-align: justify;
+    }
+    .about__message__btn{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    }
+    .about__message__btn button{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        font-weight: bold;
+        background-color: rgb(0, 0, 94);
+        color: #fff;
+    }
+    .about__image__content img{
+        height: 450px;
+        width: 450px;
+        border-radius: 15px;
+    }
+    .message__content span {
+        color: #fff;
+        font-size: 25px;
+    }
+    .mission__vission__card{
+        width: 30%;
+        height: 200px;
+        padding: 25px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .latest__projects__title{
+        width: 100%;
+        font-size: 30px;
+        color: rgb(0, 0, 94);
+        font-weight: bolder;
+        padding: 30px 0px;
+        text-align: left;
+    }
+    .service__title{
+        width: 100%;
+        font-size: 30px;
+        text-align: left;
+    }
+}
