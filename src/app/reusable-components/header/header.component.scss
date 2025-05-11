@@ -1,8 +1,8 @@
 .container {
-    height: 10vh;
+    height: fit-content;
     width: 100%;
     background-color: var(--background-color);
-
+    position: relative;
 }
 
 .header__content {
@@ -116,12 +116,10 @@
 .sub__contact{
     width: 100%;
     height: 50px;
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #ffff;
 }
 .phone_no{
     font-size: 13px;
@@ -179,6 +177,57 @@
     }
 }
 
+.slidebar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+}
+.slidebar_title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slidebar_title img{
+    height: 50px;
+    width: 50px;
+}
+.slidebar__contact{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slidebar__nav{
+    margin: 0;
+    padding: 0;
+}
+.slidebar__nav ul{
+    width: 100%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.slidebar__nav ul li{
+    width: 100%;
+    list-style:none;
+    border: 1px solid rgba(0, 0, 94, 0.356);
+    padding:5px 10px;
+    margin: 8px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
 // media query
 @media screen and (min-width: 320px) {
     .header__content {
@@ -231,12 +280,10 @@
         width: 90% !important;
         height: 50px !important;
         color: white;
-        background-color: #fff !important;
         display: flex !important;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid #ffff !important;
         margin: auto;
     }
     .menu{
@@ -256,30 +303,20 @@
         display: none;
     }
     .sub__contact{
-        display: block;
+        display: none !important;
+    }
+    .min__navbar{
+        display: none !important;
+    }
+    .slidebar{
+        display: block !important;
     }
 }
-@media screen and (max-width: 375px) {
-    .min__navbar ul{
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-    .min__navbar ul li {
-        list-style: none;
-        font-size: 18px;
-        color: rgb(0, 0, 94);
-        font-weight: 500;
+@media screen and (min-width: 375px) {
     
-        &:hover {
-            color: rgb(0, 0, 206);
-            ;
-            cursor: pointer;
-        }
-    }
+    .min__navbar{
+        display: none !important;
+      }
     .container{
         height: fit-content;
         width: 100%;
@@ -294,12 +331,7 @@
             justify-content: space-between;
         }
     
-    .min__navbar{
-        width: 100%;
-        height: fit-content;
-        color: rgb(0, 0, 94);
-    }
-    
+   
     .sub__contact{
             height: 50px !important;
             color: rgb(0, 0, 94);
@@ -319,13 +351,43 @@
         text-align: center;
         padding: 2px 5px;
     }
+    .slidebar{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    .sub__contact{
+        height: 50px !important;
+        color: rgb(0, 0, 94);
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .inner__sub__contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(0, 0, 94);
+        border-radius: 5px;
+        text-align: center;
+        padding: 2px 5px;
+    }
+    .min__navbar{
+        display: block;
+    }
+    .slidebar{
+        display: none !important;
+    }
 }
 @media screen and (min-width: 768px) {
     .header__content {
         height: fit-content;
         padding: 0px 50px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
@@ -344,24 +406,132 @@
     
         &:hover {
             color: rgb(0, 0, 206);
-            ;
             cursor: pointer;
         }
     }
+    .sub__contact{
+        height: 50px !important;
+        color: rgb(0, 0, 94);
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        background-color: transparent;
+    }
+    .inner__sub__contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(0, 0, 94);
+        border-radius: 5px;
+        text-align: center;
+        padding: 2px 5px;
+    }
+    .min__navbar{
+        display: none !important;
+    }
+    .phone_no{
+        font-size: 17px;
+        padding: 20px;
+    }
+    .inner__sub__contact span{
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .slidebar{
+        display: none !important;
+    }
 }
 @media screen and (min-width: 1024px) {
+    .header__content[_ngcontent-ng-c3489426974] {
+        height: fit-content;
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .navbar{
         display: block !important;
     }
     .menu{
         display: none !important;
     }
+    .min__navbar{
+        display: none !important;
+    }
+    .sub__contact{
+        height: 50px !important;
+        color: rgb(0, 0, 94);
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        background-color: transparent;
+    }
+    .inner__sub__contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(0, 0, 94);
+        border-radius: 5px;
+        text-align: center;
+        padding: 2px 5px;
+    }
+    .phone_no{
+        font-size: 17px;
+        padding: 20px;
+    }
+    .inner__sub__contact span{
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .slidebar{
+        display: none !important;
+    }
 }
 @media screen and (min-width: 1440px) {
+    .contact {
+        border: 1px solid rgb(0, 0, 94);
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px;
+        color: rgb(0, 0, 94);
+    
+        &:hover {
+            background-color: rgb(0, 0, 94);
+            cursor: pointer;
+            color: white;
+            background-image: rgb(0, 0, 94);
+    
+        }
+    }
+    .contact span {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .contact img {
+        display: block;
+    }
+    .sub__contact{
+        display: none !important;
+    }
     .navbar{
         display: block !important;
     }
     .menu{
+        display: none !important;
+    }
+    .min__navbar{
         display: none !important;
     }
     .navbar ul li {
@@ -376,17 +546,24 @@
             cursor: pointer;
         }
     }
+    .slidebar{
+        display: none !important;
+    }
 }
 @media screen and (min-width: 2560px) {
+    .contact{
+        display: block;
+    }
     .navbar{
         display: block !important;
     }
     .menu{
         display: none !important;
     }
+    
     .navbar ul li {
         list-style: none;
-        font-size: 30px;
+        font-size: 40px;
         color: rgb(0, 0, 94);
         font-weight: 500;
     
@@ -397,12 +574,12 @@
         }
     }
     .title span:nth-child(1) {
-        font-size: 40px;
+        font-size: 45px;
         color: rgb(0, 0, 94);
         font-weight: bolder;
     }
     .title span:nth-child(2) {
-        font-size: 15px;
+        font-size: 20px;
         color: rgb(0, 0, 94);
         font-weight: 400;
     }
@@ -419,6 +596,13 @@
         height: 100px;
         width: 100px;
         background-size: cover;
+    }
+    .contact span{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .slidebar{
+        display: none !important;
     }
 }
     
@@ -469,11 +653,11 @@
 //   }
   
   
-  @media only screen and (min-width: 768px) {
-    .menu{
-        display: none;
-    }
-    .navbar{
-        display: block;
-    }
-  }
+//   @media only screen and (min-width: 768px) {
+//     .menu{
+//         display: none;
+//     }
+//     .navbar{
+//         display: block;
+//     }
+//   }

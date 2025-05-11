@@ -625,7 +625,7 @@
     }
 
     .message__title span {
-        font-size: 15px;
+        font-size: 20px;
         position: relative;
         color: transparent;
         white-space: nowrap;
@@ -1243,6 +1243,10 @@
 }
 
 @media screen and (min-width: 2560px) {
+    .home__container {
+        height: 90vh;
+        width: 100%;
+    }
     .card {
         width: 27% !important;
         height: 700px;
