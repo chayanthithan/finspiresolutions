@@ -177,7 +177,7 @@
     }
 }
 
-.slidebar{
+.slidebar_block{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -189,33 +189,35 @@
     top: 0;
 }
 .slidebar_title{
-    width: 100%;
+    width: 90%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 .slidebar_title img{
     height: 50px;
     width: 50px;
 }
 .slidebar__contact{
-    width: 100%;
+    width: 90%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 .slidebar__nav{
     margin: 0;
     padding: 0;
 }
 .slidebar__nav ul{
-    width: 100%;
+    width: 50%;
     text-decoration: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 .slidebar__nav ul li{
@@ -232,14 +234,6 @@
 @media screen and (min-width: 320px) {
     .header__content {
         height: 100%;
-        padding: 0px 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .header__content {
-        height: fit-content;
         padding: 0px 20px;
         display: flex;
         flex-direction: row;
@@ -302,14 +296,20 @@
     .contact img {
         display: none;
     }
-    .sub__contact{
+    .sub__contact__block{
+        display: none !important;
+    }
+    .sub__contact__hide{
         display: none !important;
     }
     .min__navbar{
         display: none !important;
     }
-    .slidebar{
+    .slidebar_block{
         display: block !important;
+    }
+    .slidebar_hide{
+        display: none !important;
     }
 }
 @media screen and (min-width: 375px) {
@@ -445,7 +445,7 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    .header__content[_ngcontent-ng-c3489426974] {
+    .header__content{
         height: fit-content;
         padding: 0px 50px;
         display: flex;
@@ -495,6 +495,14 @@
     }
 }
 @media screen and (min-width: 1440px) {
+    .header__content{
+        height: fit-content;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .contact {
         border: 1px solid rgb(0, 0, 94);
         display: flex !important;
@@ -551,6 +559,14 @@
     }
 }
 @media screen and (min-width: 2560px) {
+    .header__content{
+        height: fit-content;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .contact{
         display: block;
     }

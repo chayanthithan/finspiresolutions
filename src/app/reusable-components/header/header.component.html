@@ -4,7 +4,7 @@
             <div class="image">
                 <img src="logo.png" alt="finsfire">
             </div>
-            
+
             <div class="title">
                 <span>Finspire</span>
                 <span>software solutions</span>
@@ -22,9 +22,10 @@
             <span>Talk With Us</span>
             <img src="pointer.png" alt="finsfire">
         </div>
-        <div class="menu">
+        <div (click)="__main.toggleMenu()" class="menu">
             <span class="material-symbols-outlined">menu</span>
         </div>
+
         <!-- <button
             onclick="window.location.href='mailto:kumarchayan31@gmail.com?subject=Service%20Inquiry&body=Hello%2C%20I%27m%20interested%20in%20your%20services.'">
             Contact via Email
@@ -38,32 +39,32 @@
             <li routerLink="/about">About Us</li>
         </ul>
     </div>
-    <div class="sub__contact">
+    <div [ngClass]="__main.openMenu?'sub__contact__hide':'sub__contact__block'">
         <div class="phone_no">call : +94 076 3244160</div>
         <div class="inner__sub__contact" routerLink="/contact">
             <span>Talk With Us</span>
             <img src="pointer.png" alt="finsfire">
         </div>
     </div>
-    <div class="slidebar">
+    <div [ngClass]="__main.openMenu?'slidebar_block':'slidebar_hide'">
 
         <div class="slidebar_title">
             <div class="image">
                 <img src="logo.png" alt="finsfire">
             </div>
-            <span class="material-symbols-outlined">close</span>
+            <span (click)="__main.toggleMenu()" class="material-symbols-outlined">close</span>
         </div>
         <div class="slidebar__nav">
             <ul>
-                <li routerLink="/home">Home</li>
-                <li routerLink="/service">Services</li>
-                <li routerLink="/projects">Our Works</li>
-                <li routerLink="/about">About Us</li>
+                <li (click)="__main.toggleMenu()" routerLink="/home">Home</li>
+                <li (click)="__main.toggleMenu()" routerLink="/service">Services</li>
+                <li (click)="__main.toggleMenu()" routerLink="/projects">Our Works</li>
+                <li (click)="__main.toggleMenu()" routerLink="/about">About Us</li>
             </ul>
         </div>
         <div class="slidebar__contact">
             <div class="phone_no">call : +94 076 3244160</div>
-            <div class="inner__sub__contact" routerLink="/contact">
+            <div (click)="__main.toggleMenu()" class="inner__sub__contact" routerLink="/contact">
                 <span>Talk With Us</span>
                 <img src="pointer.png" alt="finsfire">
             </div>
