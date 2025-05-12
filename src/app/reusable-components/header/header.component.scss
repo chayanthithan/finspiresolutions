@@ -185,8 +185,9 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 1;
 }
 .slidebar_title{
     width: 90%;

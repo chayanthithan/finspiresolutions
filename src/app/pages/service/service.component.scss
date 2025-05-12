@@ -47,7 +47,7 @@
     padding: 5px 0px;
 }
 .development__intro{
-
+    width: 100%;
 }
 .development__services{
 
@@ -108,3 +108,195 @@
    width: 50px;
    height: 50px;
 }
+
+@media screen and (min-width: 320px) {
+    .webDevelopment{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        padding: 31px 20px;
+    }
+    .heading{
+        font-size: 23px;
+        font-weight: bold;
+        color: rgb(0, 0, 94);
+        text-align: center;
+    }
+    .development__title{
+        font-weight: 800;
+        padding: 16px 0px;
+        text-align: justify;
+        font-size: 19px;
+    }
+    .development__intro{
+        width: 100%;
+        text-align: justify;
+    }
+    .development__content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0px;
+    }
+    .development__services{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .development__offers{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        border-radius: 10px;
+        text-align: justify;
+    }
+    .images img {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (min-width: 375px) {
+  
+}
+@media screen and (min-width: 425px) {
+  
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 1024px) {
+      .development__content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 10px;
+        font-size: 23px;
+        border: 1px solid rgb(0, 0, 94);
+        border-radius: 10px;
+    }
+    .content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+        gap: 50px;
+    }
+    .webDevelopment{
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        padding: 31px 20px;
+    }
+    .heading{
+        font-size: 40px;
+        text-align: left;
+    }
+    .development__title{
+        font-weight: 800;
+        padding: 16px 0px;
+        text-align: justify;
+        font-size: 30px;
+    }
+    .development__intro{
+        width: 100%;
+        text-align: justify;
+        font-size: 26px;
+    }
+    .development__offers{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        border-radius: 10px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .development__services{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .images img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+  
+}
+@media screen and (min-width: 2560px) {
+    .heading{
+        font-size: 69px;
+        text-align: left;
+    }
+    .development__title{
+        font-weight: 800;
+        padding: 16px 0px;
+        text-align: justify;
+        font-size: 50px;
+    }
+    .development__intro{
+        width: 100%;
+        text-align: justify;
+        font-size: 50px;
+    }
+    .development__services{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 40px;
+    }
+    .development__offers{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        border-radius: 10px;
+        text-align: justify;
+        font-size: 40px;
+    }
+    .images img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
