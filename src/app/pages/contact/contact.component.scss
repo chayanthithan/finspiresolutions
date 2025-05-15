@@ -139,6 +139,19 @@ form {
         border: 1px solid rgb(0, 0, 94);
     }
 }
+.whatsapp__section{
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    padding: 10px 12px; 
+    border: 1px solid rgb(0,0,94); 
+    border-radius: 100px;
+}
+.whatsapp__section a img{
+    height: 100px; 
+    width: 100px;
+}
 
 // media  query
 @media screen and (min-width: 320px) {
@@ -239,6 +252,24 @@ form {
             cursor: pointer;
             border: 1px solid rgb(0, 0, 94);
         }
+    }
+
+    .whatsapp__section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 1000; 
+        border: 1px solid rgb(0,0,94); 
+        border-radius: 100px;
+        background-color: rgb(3, 124, 54);
+    }
+    .whatsapp__section a img{
+        height: 60px; 
+        width: 60px;
     }
 
 }
