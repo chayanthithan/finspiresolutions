@@ -292,13 +292,14 @@ form {
 @media screen and (min-width: 425px) {}
 
 @media screen and (min-width: 768px) {
-    .links {
+       .links {
         width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40px;
     }
 
     .heading {
@@ -324,7 +325,7 @@ form {
 
 @media screen and (min-width: 1024px) {
     .intro__msg {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .contact__details[_ngcontent-ng-c1404503410] {
@@ -345,17 +346,27 @@ form {
         align-items: center;
         gap: 30px;
     }
+        .links{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
 
 }
 
 @media screen and (min-width: 1440px) {
-    .inner__container {
-        width: 100%;
-        height: 100%;
+        .inner__container{
+        width: 90%;
+        height: 90vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin: auto;
     }
 
     form {
@@ -372,7 +383,7 @@ form {
     }
 
     .intro__msg {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .contact__details {
@@ -395,10 +406,27 @@ form {
         border-radius: 5px;
         padding: 20px 5px;
     }
+    .links{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
 
 }
 
 @media screen and (min-width: 2560px) {
+        .inner__container{
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     .heading {
         font-size: 97px;
     }
