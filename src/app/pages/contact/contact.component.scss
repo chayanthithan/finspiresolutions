@@ -328,7 +328,7 @@ form {
         font-size: 30px;
     }
 
-    .contact__details[_ngcontent-ng-c1404503410] {
+    .contact__details {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -441,7 +441,7 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     .mobile img,
     .email img,
@@ -474,7 +474,8 @@ form {
     .Fullname>input {
         border: 1px solid rgb(0, 0, 94);
         border-radius: 5px;
-        padding: 30px 5px;
+        padding: 20px 5px;
+        font-size: 25px;
     }
     .btn {
         width: 90%;
